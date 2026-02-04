@@ -191,7 +191,7 @@ Meraki Design | Design with soul ✨
     const subject = language === 'es' ? '💌 Solicitud de Cotización | Nuevo Proyecto' : '💌 Quote Request | New Project';
 
     // Create mailto link
-    const mailtoLink = `mailto:creativomerakidesign@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailTemplate)}`;
+    const mailtoLink = `mailto:creativomerakidesing@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailTemplate)}`;
 
     // Open email client
     window.location.href = mailtoLink;
@@ -230,10 +230,10 @@ Meraki Design | Design with soul ✨
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">{t.email}</h3>
                   <a
-                    href="mailto:creativomerakidesign@gmail.com"
+                    href="mailto:creativomerakidesing@gmail.com"
                     className="text-purple-600 hover:text-purple-700 transition-colors text-sm"
                   >
-                    creativomerakidesign@gmail.com
+                    creativomerakidesing@gmail.com
                   </a>
                 </div>
               </div>
