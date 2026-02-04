@@ -116,7 +116,8 @@ export const translations = {
       selectService: 'Selecciona un servicio',
       servicePlaceholder: '¿Qué servicio te interesa?',
       contactButton: 'Contáctame',
-      contactDescription: 'Haz clic para abrir tu cliente de correo con una plantilla lista para que puedas contarme sobre tu proyecto',
+      contactDescription: 'Haz clic para abrir tu correo con una plantilla lista para que puedas contarme sobre tu' +
+        ' proyecto',
     },
     footer: {
       rights: 'Todos los derechos reservados.',
@@ -238,7 +239,7 @@ export const translations = {
       selectService: 'Select a service',
       servicePlaceholder: 'What service are you interested in?',
       contactButton: 'Contact me',
-      contactDescription: 'Click to open your email client with a template ready for you to tell me about your project',
+      contactDescription: 'Click to open your email with a template ready for you to tell me about your project',
     },
     footer: {
       rights: 'All rights reserved.',
