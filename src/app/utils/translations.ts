@@ -84,18 +84,18 @@ export const translations = {
       subtitle: 'Lo que dicen mis clientes',
       items: [
         {
-          name: 'María González',
-          role: 'CEO, Startup Tech',
+          name: 'Dra. Adriana Patricia Martínez',
+          role: 'Medico Fisiatra',
           text: 'Meraki Design transformó completamente nuestra identidad visual. El trabajo fue excepcional.',
         },
         {
-          name: 'Carlos Rodríguez',
-          role: 'Fundador, Café Artesanal',
+          name: 'Linda Carolina Castrillon',
+          role: 'Fundadora, Victoriosa Boutique',
           text: 'La atención al detalle y la creatividad superaron nuestras expectativas. Altamente recomendado.',
         },
         {
-          name: 'Ana Martínez',
-          role: 'Directora de Marketing',
+          name: 'Daniel Duque',
+          role: 'CEO, DKJ Soluciones',
           text: 'Profesionalismo y talento en cada proyecto. Un placer trabajar con Meraki Design.',
         },
       ],
@@ -206,18 +206,18 @@ export const translations = {
       subtitle: 'What my clients say',
       items: [
         {
-          name: 'María González',
-          role: 'CEO, Startup Tech',
+          name: 'Dra. Adriana Patricia Martínez',
+          role: 'Medico Fisiatra',
           text: 'Meraki Design completely transformed our visual identity. The work was exceptional.',
         },
         {
-          name: 'Carlos Rodríguez',
-          role: 'Founder, Artisan Café',
+          name: 'Linda Carolina Castrillon',
+          role: 'Fundadora, Victoriosa Boutique',
           text: 'The attention to detail and creativity exceeded our expectations. Highly recommended.',
         },
         {
-          name: 'Ana Martínez',
-          role: 'Marketing Director',
+          name: 'Daniel Duque',
+          role: 'CEO, DKJ Soluciones',
           text: 'Professionalism and talent in every project. A pleasure to work with Meraki Design.',
         },
       ],
