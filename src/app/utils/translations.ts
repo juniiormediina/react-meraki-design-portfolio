@@ -85,7 +85,7 @@ export const translations = {
       items: [
         {
           name: 'Dra. Adriana Patricia Martínez',
-          role: 'Medico Fisiatra',
+          role: 'Fisiatra',
           text: 'Meraki Design transformó completamente nuestra identidad visual. El trabajo fue excepcional.',
         },
         {
@@ -207,12 +207,12 @@ export const translations = {
       items: [
         {
           name: 'Dra. Adriana Patricia Martínez',
-          role: 'Medico Fisiatra',
+          role: 'Physiatrist',
           text: 'Meraki Design completely transformed our visual identity. The work was exceptional.',
         },
         {
           name: 'Linda Carolina Castrillon',
-          role: 'Fundadora, Victoriosa Boutique',
+          role: 'Founder, Victoriosa Boutique',
           text: 'The attention to detail and creativity exceeded our expectations. Highly recommended.',
         },
         {
