@@ -1,9 +1,9 @@
 import { motion } from 'motion/react';
 import { Language, translations } from '../utils/translations';
-import sinAzucarLogo from "../../assets/images/logo-sin_azucar.jpg";
-import medicoFisiatraLogo from "../../assets/images/logo-fisiatra.jpg";
-import aunarLogo from "../../assets/images/logo-aunar.jpg";
-import casaToroLogo from "../../assets/images/logo-casa_toro.jpg";
+import sinAzucarLogo from "@/assets/images/logo-sin_azucar.jpg";
+import medicoFisiatraLogo from "@/assets/images/logo-fisiatra.jpg";
+import aunarLogo from "@/assets/images/logo-aunar.jpg";
+import casaToroLogo from "@/assets/images/logo-casa_toro.jpg";
 
 
 interface ClientsProps {
