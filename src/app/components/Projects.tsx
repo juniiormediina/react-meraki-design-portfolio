@@ -1,12 +1,12 @@
 import { motion } from 'motion/react';
 import { Language, translations } from '../utils/translations';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ImageWithFallback } from '@/app/components/fallback/ImageWithFallback';
 
 interface ProjectsProps {
   language: Language;
 }
 
-export function Projects({ language }: ProjectsProps) {
+export function Projects({language}: ProjectsProps) {
   const t = translations[language].projects;
 
   const projects = [
@@ -36,12 +36,13 @@ export function Projects({ language }: ProjectsProps) {
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{opacity: 0, y: 20}}
+          whileInView={{opacity: 1, y: 0}}
+          viewport={{once: true}}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">
+          <h2
+            className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">
             {t.title}
           </h2>
           <p className="text-lg text-gray-600">{t.subtitle}</p>
@@ -51,11 +52,11 @@ export function Projects({ language }: ProjectsProps) {
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.02 }}
+              initial={{opacity: 0, y: 30}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{delay: index * 0.1}}
+              whileHover={{scale: 1.02}}
               className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer"
             >
               <ImageWithFallback
@@ -63,8 +64,10 @@ export function Projects({ language }: ProjectsProps) {
                 alt={project.title}
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div
+                className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div
+                className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                 <h3 className="text-2xl font-bold text-white mb-2">
                   {project.title}
                 </h3>

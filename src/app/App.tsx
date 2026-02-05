@@ -17,8 +17,7 @@ import { Language } from './utils/translations';
 export default function App() {
   const [language, setLanguage] = useState<Language>('es');
 
-  return (
-    <div className="min-h-screen bg-white">
+  return (<div className="min-h-screen bg-white">
       <Navigation language={language} setLanguage={setLanguage} />
       <Hero language={language} />
       <About language={language} />
@@ -32,6 +31,5 @@ export default function App() {
       <Gallery language={language} />
       <Contact language={language} />
       <Footer language={language} />
-    </div>
-  );
+    </div>);
 }

@@ -1,6 +1,6 @@
-import { Menu, X, Globe } from 'lucide-react';
+import { Globe, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { AnimatePresence, motion } from 'motion/react';
 import { Language, translations } from '../utils/translations';
 
 interface NavigationProps {
@@ -8,25 +8,25 @@ interface NavigationProps {
   setLanguage: (lang: Language) => void;
 }
 
-export function Navigation({ language, setLanguage }: NavigationProps) {
+export function Navigation({language, setLanguage}: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
   const t = translations[language].nav;
 
   const navItems = [
-    { name: t.about, href: '#about' },
-    { name: t.skills, href: '#skills' },
-    { name: t.tools, href: '#tools' },
-    { name: t.services, href: '#services' },
-    { name: t.projects, href: '#projects' },
-    { name: t.gallery, href: '#gallery' },
-    { name: t.contact, href: '#contact' },
+    {name: t.about, href: '#about'},
+    {name: t.skills, href: '#skills'},
+    {name: t.tools, href: '#tools'},
+    {name: t.services, href: '#services'},
+    {name: t.projects, href: '#projects'},
+    {name: t.gallery, href: '#gallery'},
+    {name: t.contact, href: '#contact'},
   ];
 
   const scrollToSection = (href: string) => {
     setIsOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({behavior: 'smooth'});
     }
   };
 
@@ -35,8 +35,8 @@ export function Navigation({ language, setLanguage }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{opacity: 0, x: -20}}
+            animate={{opacity: 1, x: 0}}
             className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent"
           >
             Meraki Design
@@ -47,9 +47,9 @@ export function Navigation({ language, setLanguage }: NavigationProps) {
             {navItems.map((item, index) => (
               <motion.button
                 key={item.name}
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                initial={{opacity: 0, y: -10}}
+                animate={{opacity: 1, y: 0}}
+                transition={{delay: index * 0.1}}
                 onClick={() => scrollToSection(item.href)}
                 className="text-gray-700 hover:text-purple-600 transition-colors"
               >
@@ -87,9 +87,9 @@ export function Navigation({ language, setLanguage }: NavigationProps) {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{opacity: 0, height: 0}}
+            animate={{opacity: 1, height: 'auto'}}
+            exit={{opacity: 0, height: 0}}
             className="md:hidden bg-white border-b border-purple-100"
           >
             <div className="px-4 py-4 space-y-3">

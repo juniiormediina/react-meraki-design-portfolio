@@ -1,4 +1,4 @@
-export type Language = 'es' | 'en';
+export type Language = 'es'|'en';
 
 export const translations = {
   es: {
@@ -24,12 +24,12 @@ export const translations = {
     skills: {
       title: 'Habilidades',
       items: [
-        { name: 'Pensamiento Creativo', description: 'Soluciones innovadoras y originales' },
-        { name: 'Dominio Técnico', description: 'Expertise en herramientas de diseño' },
-        { name: 'Sensibilidad Estética', description: 'Ojo para el detalle y la composición' },
-        { name: 'Comunicación Efectiva', description: 'Transmitir ideas claramente' },
-        { name: 'Gestión y Organización', description: 'Proyectos bien planificados' },
-        { name: 'Adaptabilidad', description: 'Flexible a nuevos retos' },
+        {name: 'Pensamiento Creativo', description: 'Soluciones innovadoras y originales'},
+        {name: 'Dominio Técnico', description: 'Expertise en herramientas de diseño'},
+        {name: 'Sensibilidad Estética', description: 'Ojo para el detalle y la composición'},
+        {name: 'Comunicación Efectiva', description: 'Transmitir ideas claramente'},
+        {name: 'Gestión y Organización', description: 'Proyectos bien planificados'},
+        {name: 'Adaptabilidad', description: 'Flexible a nuevos retos'},
       ],
     },
     tools: {
@@ -147,12 +147,12 @@ export const translations = {
     skills: {
       title: 'Skills',
       items: [
-        { name: 'Creative Thinking', description: 'Innovative and original solutions' },
-        { name: 'Technical Mastery', description: 'Expertise in design tools' },
-        { name: 'Aesthetic Sensitivity', description: 'Eye for detail and composition' },
-        { name: 'Effective Communication', description: 'Clear idea transmission' },
-        { name: 'Management & Organization', description: 'Well-planned projects' },
-        { name: 'Adaptability', description: 'Flexible to new challenges' },
+        {name: 'Creative Thinking', description: 'Innovative and original solutions'},
+        {name: 'Technical Mastery', description: 'Expertise in design tools'},
+        {name: 'Aesthetic Sensitivity', description: 'Eye for detail and composition'},
+        {name: 'Effective Communication', description: 'Clear idea transmission'},
+        {name: 'Management & Organization', description: 'Well-planned projects'},
+        {name: 'Adaptability', description: 'Flexible to new challenges'},
       ],
     },
     tools: {

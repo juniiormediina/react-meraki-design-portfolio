@@ -6,7 +6,7 @@ interface FooterProps {
   language: Language;
 }
 
-export function Footer({ language }: FooterProps) {
+export function Footer({language}: FooterProps) {
   const t = translations[language].footer;
 
   return (
@@ -16,8 +16,8 @@ export function Footer({ language }: FooterProps) {
           <div>
             <h3 className="text-2xl font-bold mb-4">Meraki Design</h3>
             <p className="text-purple-200">
-              {language === 'es' 
-                ? 'Creando identidades visuales con alma.' 
+              {language === 'es'
+                ? 'Creando identidades visuales con alma.'
                 : 'Creating visual identities with soul.'}
             </p>
           </div>
@@ -34,21 +34,21 @@ export function Footer({ language }: FooterProps) {
             <h4 className="font-semibold mb-4">{language === 'es' ? 'Sígueme' : 'Follow Me'}</h4>
             <div className="flex gap-4">
               <motion.a
-                whileHover={{ scale: 1.1 }}
+                whileHover={{scale: 1.1}}
                 href="#"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </motion.a>
               <motion.a
-                whileHover={{ scale: 1.1 }}
+                whileHover={{scale: 1.1}}
                 href="#"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </motion.a>
               <motion.a
-                whileHover={{ scale: 1.1 }}
+                whileHover={{scale: 1.1}}
                 href="#"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
               >
@@ -60,7 +60,7 @@ export function Footer({ language }: FooterProps) {
 
         <div className="border-t border-purple-600 pt-8 text-center text-purple-200">
           <p className="flex items-center justify-center gap-2">
-            © 2026 Meraki Design. {t.rights} {t.made} <Heart className="w-4 h-4 text-purple-400" /> 
+            © 2026 Meraki Design. {t.rights} {t.made} <Heart className="w-4 h-4 text-purple-400" />
           </p>
         </div>
       </div>
